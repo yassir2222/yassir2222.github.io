@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Login & Registration</title>
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> 
+    <link rel="stylesheet" href="styleSignUp.css">
+    <link rel="icon" type="image/x-icon" href="enter.png">
+
+</head>
+  <body>
+    <section>
+        <div class="signUp-container" id="signup">
+            <h1>Sign Up</h1>
+            <div class="SignUp-name">
+                <input type="text" placeholder="Enter your name" required id="name">
+                <i class="uil uil-user"></i>
+            </div>
+            <span class="error " id="name-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">Please fill the field correctly.</p>
+            </span>
+
+            <div class="SignUp-email">
+                <input type="email" placeholder="Enter your email" required id="email">
+                <i class="uil uil-envelope-alt"></i>
+            </div>
+            <span class="error" id="email-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">Please enter a valid email</p>
+            </span>
+
+            <div class="SingUp-age">
+                <input type="text" placeholder="Enter your age" required id="age">
+                <i class="uil uil-calender"></i>
+            </div>
+            <span class="error " id="age-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">Invalid value for age.</p>
+            </span>
+
+            <div class="SignUp-password">
+                <input type="password" placeholder="Create password" required id="password">
+                <i class="uil uil-lock password"></i>
+            </div>
+            <span class="error " id="password-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">
+                 Please enter atleast 8 charatcer with number, symbol, small and
+                capital letter.
+                </p>
+            </span>
+            
+            <div class="SingUp-Confirm-password">
+                <input type="password" placeholder="Confirm password" required  id="confirm-password"/>
+                <i class="uil uil-lock password" ></i>
+            </div>
+            <span class="error " id="Confirm-password-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">
+                    Password don't match.
+                </p>
+            </span>
+
+            <div class="checkbox-content">
+                <input type="checkbox" id="termCon">
+                <label for="termCon" class="text">I accepted all terms and conditions</label>
+            </div>
+            <span id="check-box" class="error" >
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">
+                    Please complete all required fields.
+                </p>
+            </span>
+ 
+            <div class="button" >
+                <button  onclick="return Validtion()" >Signup</button>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <form action="index.html" method="get" onsubmit="return login_validation()" id="login" >
+        <div class="signUp-container">
+            <h1>Log in </h1>
+            <div class="SignUp-name">
+                <input type="text" placeholder="name or email" required id="name-email">
+                <i class="uil uil-user"></i>
+            </div>
+            <span class="error " id="name-email-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">Incorrect username</p>
+            </span>
+
+            
+            <div class="SignUp-password">
+                <input type="password" placeholder="enter your password" required id="password-login">
+                <i class="uil uil-lock password"></i>
+            </div>
+            <span class="error " id="password-login-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">
+                 Incorrect password
+                </p>
+            </span>
+ 
+            <div class="button" >
+                <button type="submit" >Login</button>
+            </div>
+
+        </div>
+    </form>
+    </section>
+    <script src="SigneUpScript.js"></script>
+  </body>
+    
+
+    

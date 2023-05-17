@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="styleProduct.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <p><i class="uil uil-book"></i>BOOK STORE</p>
+            <div class="shopping">
+                <i class="uil uil-shopping-cart"></i>
+                <p id="nbr-book">0</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="Container-books">
+            <div class="container-book">
+
+                <img src="python1.jpg" alt="aaaaaa">
+                <H1 class="title">Python Crash Course, 3rd Edition: A Hands-On, Project-Based Introduction to Programming 3rd Edition</H1>
+                <p class="description">Python Crash Course is the world's bestselling programming book, with over 1,500,000 copies sold to date! <span>...see more</span></p>
+                
+                <div class="price">
+                    <img src="rating_book1.PNG" alt="">
+                    <p>In stock</p>
+                    <h3>Price <span class="prix">30.61</span><span>$</span></h3>
+                </div>
+                <div class="order">
+                    <p>Qty:</p>
+                    <input type="number" min="0" value="0" max="20" class="quantity">
+                    <p class="valid"><i class="uil uil-check-circle"></i>book added secusfully</p>
+                    <button  class="Buy" onclick="Valid(0)">Add to Cart<i class="uil uil-shopping-cart-alt"></i></button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="Container-books">
+            <div class="container-book">
+
+                <img src="book13.jpg" alt="aaaaaa">
+                <H1 class="title">C++ High Performance: Master the art of optimizing the functioning of your C++ code, 2nd Edition 2nd ed. Edition</H1>
+                <p class="description">A comprehensive guide to help aspiring and professional C++ developers elevate the performance of their apps by allowing them to  <span>...see more</span></p>
+                
+                <div class="price">
+                    <img src="rating_book2.PNG" alt="">
+                    <p>In stock</p>
+                    <h3>Price <span class="prix">58.5</span><span>$</span></h3>
+                </div>
+                <div class="order">
+                    <p>Qty:</p>
+                    <input type="number"  min="0" value="0" max="20" class="quantity">
+                    <p class="valid"><i class="uil uil-check-circle"></i>book added secusfully</p>
+                    <button  class="Buy" onclick="Valid(1)">Add to Cart<i class="uil uil-shopping-cart-alt"></i></button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="Container-books">
+            <div class="container-book">
+
+                <img src="javascript3.jpg" alt="aaaaaa">
+                <H1 class="title">JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language 7th Edition</H1>
+                <p class="description">JavaScript is the programming language of the web and is used by more software developers  <span>...see more</span></p>
+                
+                <div class="price">
+                    <img src="rating_book3.PNG" alt="">
+                    <p>In stock</p>
+                    <h3>Price <span class="prix">35.85</span><span>$</span></h3>
+                </div>
+                <div class="order">
+                    <p>Qty:</p>
+                    <input type="number"  min="0" value="0" max="20" class="quantity">
+                    <p class="valid"><i class="uil uil-check-circle"></i>book added secusfully</p>
+                    <button  class="Buy" onclick="Valid(2)">Add to Cart<i class="uil uil-shopping-cart-alt"></i></button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="Container-books">
+            <div class="container-book">
+
+                <img src="book4.jpg" alt="aaaaaa">
+                <H1 class="title">HTML and CSS QuickStart Guide: The Simplified Beginners Guide to Developing a Strong Coding Foundation</H1>
+                <p class="description">Master HTML and CSS fundamentals to create beautiful websites.
+                    The best book on the market for <span>...see more</span></p>
+                
+                <div class="price">
+                    <img src="rating_book4.PNG" alt="">
+                    <p>In stock</p>
+                    <h3>Price <span class="prix">23.39</span><span>$</span></h3>
+                </div>
+                <div class="order">
+                    <p>Qty:</p>
+                    <input type="number"  min="0" value="0" max="20" class="quantity">
+                    <p class="valid"><i class="uil uil-check-circle"></i>book added secusfully</p>
+                    <button  class="Buy" onclick="Valid(3)">Add to Cart<i class="uil uil-shopping-cart-alt"></i></button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="Container-books">
+            <div class="container-book">
+
+                <img src="book5.jpg" alt="aaaaaa">
+                <H1 class="title">SwiftUI Cookbook: A guide to solving the most common problems and learning best practices while building SwiftUI apps</H1>
+                <p class="description">Unleash the power of declarative programming in SwiftUI by building cross-platform Apple apps for  <span>...see more</span></p>
+                
+                <div class="price">
+                    <img src="rating_book5.PNG" alt="">
+                    <p>In stock</p>
+                    <h3>Price <span class="prix">40.20</span><span>$</span> </h3>
+                </div>
+                <div class="order">
+                    <p>Qty:</p>
+                    <input type="number"  min="0" value="0" max="20" class="quantity">
+                    <p class="valid"><i class="uil uil-check-circle"></i>book added secusfully</p>
+                    <button  class="Buy" onclick="Valid(4)">Add to Cart<i class="uil uil-shopping-cart-alt"></i></button>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button type="submit" onclick="BuyButton()" id="Buy" ><i class="uil uil-check-circle"></i>Buy Now</button>
+        <div id="facture">
+            
+        </div>
+        <div >
+            <button id="next" onclick="window.open('Payement.html')">Next<i class="uil uil-message"></i></button>
+        </div>
+
+    </footer>
+    <script src="ScriptProduct.js"></script>
+</body>
+</html>

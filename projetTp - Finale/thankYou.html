@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thank you</title>
+    <link rel="stylesheet" href="thankYou-style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"></head>
+    <link rel="icon" type="image/x-icon" href="hand.png">
+
+<body>
+    
+    <div class="container">
+        <div class="thanks-container">
+            <div class="check">
+                    <i class="uil uil-check-circle"></i>
+            </div>
+            <div class="description">
+                <span>
+                    We really appreciate you giving us a moment of your time today :)</span>
+            </div>
+            <div class="btn" role="button" onclick="window.open('index.html')"><b>back<i class="uil uil-angle-right-b"></i></b>
+            </div>
+        </div>
+    </div>
+    <div class='flex'>
+        <div class='p1'>Player 1: 0</div>
+        <h1 class='header'>Tic Tac Toe</h1>
+        <div class='p2'>Player 2: 0</div>
+      </div>
+      <div class='grid'>
+        <div class='space' id='(0)(0)' role="button" onclick="boxe_check(0,0)"></div>
+        <div class='space' id='(0)(1)' role="button" onclick="boxe_check(0,1)"></div>
+        <div class='space' id='(0)(2)' role="button" onclick="boxe_check(0,2)"></div>
+
+        <div class='space' id='(1)(0)' role="button" onclick="boxe_check(1,0)"></div>
+        <div class='space' id='(1)(1)' role="button" onclick="boxe_check(1,1)"></div>
+        <div class='space' id='(1)(2)' role="button" onclick="boxe_check(1,2)"></div>
+
+        <div class='space' id='(2)(0)' role="button" onclick="boxe_check(2,0)"></div>
+        <div class='space' id='(2)(1)' role="button" onclick="boxe_check(2,1)"></div>
+        <div class='space' id='(2)(2)' role="button" onclick="boxe_check(2,2)"></div>
+      </div> 
+      
+      <div class='wrapper'>
+        <div class="resetbtn"><button class='reset' onclick="reset()" >Reset</button></div>
+        <div class="startbtn"><button class='start' onclick="start()">Start</button></div>
+    </div>
+
+    <div id="chose">
+        <div class="chose-content">
+            <div class="chose-header">
+                <h2>what do you want?</h2>
+            </div>
+            <div class="chose-body">
+               <button id="X-Btn" onclick="choix(1)"><i class="uil uil-multiply"></i></button> 
+               <button id="O-Btn" onclick="choix(2)"><i class="uil uil-circle"></i></button>
+            </div>
+         </div>
+  
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Game Over</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal_text"></p>
+                <btn id="restartBtn" onclick="tryfunction()">Play again?</btn>
+            </div>
+         </div>
+        
+    </div>
+  
+
+    <script src="thankYou-script.js"></script>
+</body>
+</html>
